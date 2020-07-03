@@ -112,13 +112,37 @@
          <version>1.2</version>
       </dependency>
    
-      <!-- Test -->
+      <!-- Test 버전을 4.12로 변경-->
       <dependency>
          <groupId>junit</groupId>
          <artifactId>junit</artifactId>
-         <version>4.7</version>
+         <version>4.12</version>
          <scope>test</scope>
-      </dependency>        
+      </dependency>     
+      
+      <!-- 스프링 테스트 환경 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${org.springframework-version}</version>
+		    <scope>test</scope>
+		</dependency>
+      
+		      <!-- 오라클 커넥터 -->
+		<dependency>
+		    <groupId>com.oracle.ojdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>19.3.0.0</version>
+		</dependency>
+		
+		<!-- 히카리 커넥션 풀 -->
+		<dependency>
+		    <groupId>com.zaxxer</groupId>
+		    <artifactId>HikariCP</artifactId>
+		    <version>3.3.1</version>
+		</dependency>
+				
+         
    </dependencies>
    
    <!--1. 메이븐 컴파일옵션을 1.8로 선언, 메이븐 버전을 3.5.1로 변경  maven update실행  -->
