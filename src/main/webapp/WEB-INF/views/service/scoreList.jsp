@@ -15,12 +15,12 @@
 <c:forEach var="vo" items ="${list }" varStatus="num">
 	
 				
-				번호 : ${num.index},
+				번호 : ${vo.num},
 				이름 : ${vo.name},
 				국어 : ${vo.kor},
 				수학 : ${vo.eng},
 				영어 : ${vo.math}
-<button type = "button"  onclick ="location.href = 'scoreDelete?num=${num.index}'">삭제</button><br>
+<button type = "button"  onclick ="location.href = 'scoreDelete?num=${vo.num}'">삭제</button><br>
 	</c:forEach>
 	
 	<script>

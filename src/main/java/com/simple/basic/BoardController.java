@@ -15,7 +15,7 @@ import com.simple.service.BoardService;
 public class BoardController {
 	
 	@Autowired
-	private BoardService boardService;
+	private BoardService boardService; //서비스 입력값을 적는다
 
 	//등록화면 이동
 	@RequestMapping("/boardRegister")

@@ -92,7 +92,7 @@
          <version>1</version>
       </dependency>
             
-            <!-- 자바 서블릿 스펙, 3.1.0으로 변경 artifactId = javax.servlet-api 로 변경  -->
+      <!-- 자바 서블릿 스펙, 3.1.0으로 변경 artifactId = javax.servlet-api 로 변경  -->
       <!-- Servlet -->
       <dependency>
          <groupId>javax.servlet</groupId>
@@ -141,7 +141,14 @@
 		    <artifactId>HikariCP</artifactId>
 		    <version>3.3.1</version>
 		</dependency>
-				
+		
+		<!--스프링에서 제공하는 JDBC기능을 사용하기 위해 반드시 필요  -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>5.0.7.RELEASE</version>
+		</dependency>
+		
          
    </dependencies>
    

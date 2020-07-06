@@ -13,7 +13,7 @@ import com.simple.dao.BoardDAO;
 public class BoardServiceImpl implements BoardService{
 	
 	@Autowired
-	private BoardDAO boardDao;
+	private BoardDAO boardDao; //어노테이션 입력값을 적는다
 
 	@Override
 	public void boardRegist(BoardVO vo) {

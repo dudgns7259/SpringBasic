@@ -10,7 +10,7 @@ public class JDBCBasic {
 	@Test
 	public void test() {
 		
-		//데이터베이스 연결확인
+		//데이터베이스 연결확인 (커넥션 풀 없이)
 		String url = "jdbc:oracle:thin:@localhost:1521/XEPDB1";
 		String uid = "spring";
 		String upw = "spring";

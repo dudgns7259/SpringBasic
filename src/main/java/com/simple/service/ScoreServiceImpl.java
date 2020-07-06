@@ -19,6 +19,7 @@ public class ScoreServiceImpl implements ScoreService{
 
 	@Override
 	public void ScoreRegist(ScoreVO vo) {
+		System.out.println(scoreDao);
 		
 		scoreDao.scoreRegist(vo);
 	}
